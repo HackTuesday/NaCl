@@ -1,2 +1,8 @@
-nacl_sdk/pepper_26
+*.swp
+*.swo
+nacl_sdk/pepper_*
 nacl_sdk/sdk_cache
+
+*.nmf
+*.o
+*.nexe
