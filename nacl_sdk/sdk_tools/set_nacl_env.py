@@ -13,7 +13,7 @@ import subprocess
 import sys
 
 # The default sdk platform to use if the user doesn't specify one.
-__DEFAULT_SDK_PLATFORM = 'pepper_15'
+__DEFAULT_SDK_PLATFORM = 'pepper_26'
 
 # Usage info.
 __GLOBAL_HELP = '''%prog options [command]
@@ -138,7 +138,7 @@ def GetNaclSdkRoot():
   else:
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
     SRC_DIR = os.path.dirname(os.path.dirname(os.path.dirname(SCRIPT_DIR)))
-    return os.path.join(SRC_DIR, 'native_client')
+    return os.path.join(SRC_DIR, 'NaCl')
 
 
 def GetToolchainPath(options):
